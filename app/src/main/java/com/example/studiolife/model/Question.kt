@@ -1,14 +1,21 @@
 package com.example.studiolife.model
 
+import android.text.Editable
 import androidx.annotation.DrawableRes
 
 /**
  * A data class to represent the information presented in the question card
  */
-data class Question(
+class Question(
 //    @DrawableRes val imageResourceId: Int,
     val question: String,
-    val input1: String?,
-    val input2: String?,
-    val input3: String?
+    var input1: String?,
+    var input2: String?,
+    var input3: String?
 )
+//    editText.addTextChangedListener(object TextWatcher() {
+//
+//    override fun afterTextChanged(s : Editable) {
+//        item.textFieldValue = s.toString()
+//    }
+//});

@@ -15,7 +15,7 @@
 */
 package com.example.studiolife
 
-import com.example.studiolife.Question
+import com.example.studiolife.model.Question
 
 /**
  * An object to generate a static list of dogs

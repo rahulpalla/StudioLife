@@ -17,8 +17,8 @@ package com.example.studiolife
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-//import com.example.studiolife.QuestionCardAdapter
-//import com.example.studiolife.databinding.EntryFormBinding
+import com.example.studiolife.adapter.QuestionCardAdapter
+import com.example.studiolife.databinding.EntryFormBinding
 import com.example.studiolife.databinding.EntryFormFullBinding
 
 class EntryFormActivity : AppCompatActivity() {
