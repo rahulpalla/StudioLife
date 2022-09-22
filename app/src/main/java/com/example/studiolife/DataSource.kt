@@ -50,20 +50,6 @@ object DataSource {
             null,
             null,
             null
-        ),
-        Question(
-//            R.drawable.tabitha,
-            "Tabitha",
-            null,
-            null,
-            null
-        ),
-        Question(
-//            R.drawable.tiramisu,
-            "Tiramisu",
-            null,
-            null,
-            null
         )
     )
 }
