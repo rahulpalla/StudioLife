@@ -80,10 +80,10 @@ class QuestionCardAdapter (
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
         })
         holder.enterButton?.setOnClickListener() {
-            Toast.makeText(context, "yo", Toast.LENGTH_LONG)
             myData.add(inputOne)
             myData.add(inputTwo)
             myData.add(inputThree)
+            holder.enterButton.visibility = View.INVISIBLE
         }
     }
 }

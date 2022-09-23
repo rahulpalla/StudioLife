@@ -29,4 +29,10 @@
         android:scrollbars="vertical"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
+    <Button
+        android:id="@+id/continue_r_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        />
 </FrameLayout>

@@ -21,32 +21,16 @@ import android.os.Bundle
 import android.view.View
 import androidx.core.content.ContextCompat.startActivity
 import com.example.studiolife.QuestionCardAdapter
-import com.example.studiolife.databinding.EntryFormBinding
-import com.example.studiolife.databinding.EntryFormFullBinding
+import com.example.studiolife.databinding.EndPageBinding
 
-class EntryFormActivity : AppCompatActivity() {
+class EndActivity : AppCompatActivity() {
 
-    private lateinit var binding: EntryFormFullBinding
+    private lateinit var binding: EndPageBinding
     private lateinit var listIntent: Intent
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = EntryFormFullBinding.inflate(layoutInflater)
+        binding = EndPageBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.continueRBtn.setOnClickListener{ launchEndPage() }
-
-        binding.verticalRecyclerView.adapter = QuestionCardAdapter(
-            applicationContext,
-        )
-
-        // Specify fixed size to improve performance
-        binding.verticalRecyclerView.setHasFixedSize(true)
-
-        // Enable up button for backward navigation
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-    }
-    private fun launchEndPage() {
-        listIntent = Intent(this, EndActivity::class.java)
-        startActivity(listIntent)
     }
 }
