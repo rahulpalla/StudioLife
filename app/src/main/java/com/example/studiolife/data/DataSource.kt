@@ -26,45 +26,55 @@ object DataSource {
     val questions: List<Question> = listOf(
         Question(
 //            R.drawable.zoya,
-            "Zoya",
+            "What career do you want?",
             null,
             null,
             null
         ),
-        Question(
-//            R.drawable.momo,
-            "Mo",
-            null,
-            null,
-            null
-        ),
+
         Question(
 //            R.drawable.cupcake,
-            "Cupcake",
+            "Who do you want to marry?",
             null,
             null,
             null
         ),
+
         Question(
-//            R.drawable.jasper,
-            "Jasper",
-            null,
-            null,
-            null
-        ),
-        Question(
-//            R.drawable.tabitha,
-            "Tabitha",
+//            R.drawable.momo,
+            "Where do you want to live?",
             null,
             null,
             null
         ),
         Question(
 //            R.drawable.tiramisu,
-            "Tiramisu",
+            "What kind of house do you want?",
             null,
             null,
             null
-        )
+        ),
+
+        Question(
+//            R.drawable.tiramisu,
+            "What mode of transportation do you want?",
+            null,
+            null,
+            null
+        ),
+        Question(
+//            R.drawable.jasper,
+            "How many kids do you want?",
+            null,
+            null,
+            null
+        ),
+        Question(
+//            R.drawable.tabitha,
+            "What pet do you want",
+            null,
+            null,
+            null
+        ),
     )
 }
