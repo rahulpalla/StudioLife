@@ -26,7 +26,6 @@ import com.example.studiolife.databinding.EndPageBinding
 class EndActivity : AppCompatActivity() {
 
     private lateinit var binding: EndPageBinding
-    private lateinit var listIntent: Intent
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
