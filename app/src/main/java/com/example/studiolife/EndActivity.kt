@@ -18,6 +18,7 @@ package com.example.studiolife
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.studiolife.adapter.QuestionCardAdapter
 import com.example.studiolife.databinding.EndPageBinding
 
 class EndActivity: AppCompatActivity() {
