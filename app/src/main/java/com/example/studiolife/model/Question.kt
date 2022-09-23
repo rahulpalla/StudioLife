@@ -1,6 +1,7 @@
 package com.example.studiolife.model
 
 import android.text.Editable
+import android.widget.Button
 import androidx.annotation.DrawableRes
 
 /**
@@ -11,11 +12,5 @@ class Question(
     val question: String,
     var input1: String?,
     var input2: String?,
-    var input3: String?
+    var input3: String?,
 )
-//    editText.addTextChangedListener(object TextWatcher() {
-//
-//    override fun afterTextChanged(s : Editable) {
-//        item.textFieldValue = s.toString()
-//    }
-//});

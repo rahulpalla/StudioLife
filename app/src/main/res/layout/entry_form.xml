@@ -44,25 +44,6 @@
             app:layout_constraintStart_toEndOf="@+id/input1"
             app:layout_constraintTop_toBottomOf="@+id/question"/>
 
-<!--        <com.google.android.material.textfield.TextInputLayout-->
-<!--            android:id="@+id/input1_text"-->
-<!--            android:layout_width="200dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginStart="16dp"-->
-<!--            android:layout_marginBottom="20dp"-->
-<!--            android:layout_marginTop="10dp"-->
-<!--            android:hint="@string/option_1"-->
-<!--            app:layout_constraintStart_toEndOf="@+id/input1"-->
-<!--            app:layout_constraintTop_toBottomOf="@+id/question">-->
-
-<!--            <com.google.android.material.textfield.TextInputEditText-->
-<!--                android:id="@+id/input1_edit_text"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:inputType="text" />-->
-
-<!--        </com.google.android.material.textfield.TextInputLayout>-->
-
         <TextView
             android:id="@+id/input2"
             android:layout_height="wrap_content"
@@ -82,24 +63,6 @@
             android:hint="@string/option_2"
             app:layout_constraintStart_toEndOf="@+id/input2"
             app:layout_constraintTop_toBottomOf="@+id/input1_text"/>
-
-<!--        <com.google.android.material.textfield.TextInputLayout-->
-<!--            android:id="@+id/input2_text"-->
-<!--            android:layout_width="200dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginStart="16dp"-->
-<!--            android:layout_marginTop="10dp"-->
-<!--            android:hint="@string/option_2"-->
-<!--            app:layout_constraintStart_toEndOf="@+id/input2"-->
-<!--            app:layout_constraintTop_toBottomOf="@+id/input1_text">-->
-
-<!--            <com.google.android.material.textfield.TextInputEditText-->
-<!--                android:id="@+id/input2_edit_text"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:inputType="text" />-->
-
-<!--        </com.google.android.material.textfield.TextInputLayout>-->
 
         <TextView
             android:id="@+id/input3"
@@ -121,23 +84,15 @@
             app:layout_constraintStart_toEndOf="@+id/input3"
             app:layout_constraintTop_toBottomOf="@+id/input2_text"/>
 
-<!--        <com.google.android.material.textfield.TextInputLayout-->
-<!--            android:id="@+id/input3_text"-->
-<!--            android:layout_width="200dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginStart="16dp"-->
-<!--            android:layout_marginTop="10dp"-->
-<!--            android:hint="@string/option_2"-->
-<!--            app:layout_constraintStart_toEndOf="@+id/input3"-->
-<!--            app:layout_constraintTop_toBottomOf="@+id/input2_text">-->
-
-<!--            <com.google.android.material.textfield.TextInputEditText-->
-<!--                android:id="@+id/input3_edit_text"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:inputType="text" />-->
-
-<!--        </com.google.android.material.textfield.TextInputLayout>-->
+        <Button
+            android:id="@+id/done_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/input3_text"
+            android:text="@string/done_btn_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="30dp"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
