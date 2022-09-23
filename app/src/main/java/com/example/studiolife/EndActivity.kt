@@ -23,7 +23,7 @@ import com.example.studiolife.databinding.EndPageBinding
 class EndActivity: AppCompatActivity() {
 
     private lateinit var binding: EndPageBinding
-    private lateinit var listIntent: Intent
+//    private lateinit var listIntent: Intent
     private val resultList: ArrayList<String> = arrayListOf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,17 +31,17 @@ class EndActivity: AppCompatActivity() {
         binding = EndPageBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val optionList = listIntent.getStringArrayListExtra("optionsToChoose")
+        val optionList = intent?.getStringArrayListExtra("optionsToChoose")
 
         val life = Life(optionList as ArrayList<String>, resultList)
         life.select()
 
         if (resources != null && resultList.size == 5) {
-            resources.getString(R.string.career_txt, resultList[0])
-            resources.getString(R.string.spouse_txt, resultList[1])
-            resources.getString(R.string.location_txt, resultList[2])
-            resources.getString(R.string.house_txt, resultList[3])
-            resources.getString(R.string.kids_txt, resultList[4])
+            var inputOne: String = resources.getString(R.string.career_txt, resultList[0])
+            var inputTwo: String = resources.getString(R.string.spouse_txt, resultList[1])
+            var inputThree: String =resources.getString(R.string.location_txt, resultList[2])
+            var inputFour: String =resources.getString(R.string.house_txt, resultList[3])
+            var inputFive: String =resources.getString(R.string.kids_txt, resultList[4])
         }
     }
 }
@@ -50,10 +50,11 @@ class Life (private val optionList: ArrayList<String>, private val resultList: M
 
     fun select() {
 
-        for (i in 0..(optionList.size/3)) {
+        for (i in 0 until optionList.size/3) {
             var rand: Int = (0..2).random()
-            resultList.add(optionList[i*rand])
+            resultList.add(optionList[(i * 3) + rand])
         }
+
     }
 
 }
