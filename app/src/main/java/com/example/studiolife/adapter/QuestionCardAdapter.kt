@@ -11,15 +11,12 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.studiolife.adapter.QuestionCardAdapter
 import com.example.studiolife.R
-import com.example.studiolife.data.DataSource
 import com.example.studiolife.data.DataSource.questions
-import com.google.android.material.textfield.TextInputEditText
 
 class QuestionCardAdapter (
     private val context: Context?,
-    private val optionList: MutableList<String>
+    private val optionList: ArrayList<String>
 ): RecyclerView.Adapter<QuestionCardAdapter.QuestionCardViewHolder>() {
 
     //Initialize the data using the List found in data/DataSource
@@ -86,7 +83,7 @@ class QuestionCardAdapter (
             optionList.add(temp1)
             optionList.add(temp2)
             optionList.add(temp3)
-            holder.button?.visibility = View.GONE;
+            holder.button.visibility = View.INVISIBLE;
         }
     }
 }

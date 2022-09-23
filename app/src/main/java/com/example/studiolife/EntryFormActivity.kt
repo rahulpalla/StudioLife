@@ -15,8 +15,11 @@
 */
 package com.example.studiolife
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import androidx.core.content.ContextCompat.startActivity
 import com.example.studiolife.adapter.QuestionCardAdapter
 import com.example.studiolife.databinding.EntryFormBinding
 import com.example.studiolife.databinding.EntryFormFullBinding
@@ -24,13 +27,16 @@ import com.example.studiolife.databinding.EntryFormFullBinding
 class EntryFormActivity : AppCompatActivity() {
 
     private lateinit var binding: EntryFormFullBinding
+    private lateinit var listIntent: Intent
+    private val optionList: ArrayList<String> = arrayListOf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = EntryFormFullBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.continueRBtn.setOnClickListener{ launchEndPage() }
 
-        val optionList: MutableList<String> = mutableListOf()
+
 
         binding.verticalRecyclerView.adapter = QuestionCardAdapter(
             applicationContext,
@@ -42,5 +48,10 @@ class EntryFormActivity : AppCompatActivity() {
 
         // Enable up button for backward navigation
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+    }
+    private fun launchEndPage() {
+        listIntent = Intent(this, EndActivity::class.java)
+        listIntent.putStringArrayListExtra("optionsToChoose", optionList)
+        startActivity(listIntent)
     }
 }

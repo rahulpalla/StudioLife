@@ -19,11 +19,11 @@ import android.widget.Button
 import com.example.studiolife.model.Question
 
 /**
- * An object to generate a static list of dogs
+ * An object to generate a list of questions
  */
 object DataSource {
 
-    val questions: List<Question> = listOf(
+    var questions: MutableList<Question> = mutableListOf(
         Question(
 //            R.drawable.zoya,
             "What career do you want?",
@@ -54,24 +54,9 @@ object DataSource {
             null,
             null
         ),
-
-        Question(
-//            R.drawable.tiramisu,
-            "What mode of transportation do you want?",
-            null,
-            null,
-            null
-        ),
         Question(
 //            R.drawable.jasper,
             "How many kids do you want?",
-            null,
-            null,
-            null
-        ),
-        Question(
-//            R.drawable.tabitha,
-            "What pet do you want",
             null,
             null,
             null
