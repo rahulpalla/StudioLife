@@ -29,6 +29,9 @@ class EntryFormActivity : AppCompatActivity() {
     private lateinit var binding: EntryFormFullBinding
     private lateinit var listIntent: Intent
     private val optionList: ArrayList<String> = arrayListOf()
+//=======
+//    private val myData: ArrayList<String> = arrayListOf()
+//>>>>>>> origin/rajbranch
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,6 +44,9 @@ class EntryFormActivity : AppCompatActivity() {
         binding.verticalRecyclerView.adapter = QuestionCardAdapter(
             applicationContext,
             optionList,
+//=======
+//            myData
+//>>>>>>> origin/rajbranch
         )
 
         // Specify fixed size to improve performance
@@ -52,6 +58,9 @@ class EntryFormActivity : AppCompatActivity() {
     private fun launchEndPage() {
         listIntent = Intent(this, EndActivity::class.java)
         listIntent.putStringArrayListExtra("optionsToChoose", optionList)
+//=======
+//        listIntent.putStringArrayListExtra("data_list", myData)
+//>>>>>>> origin/rajbranch
         startActivity(listIntent)
     }
 }

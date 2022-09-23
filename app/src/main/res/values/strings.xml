@@ -5,13 +5,15 @@
     <string name="welcome">Welcome to Studio Life</string>
     <string name="option_1">option 1</string>
     <string name="option_2">option 2</string>
+
     <string name="done_btn_text">Done</string>
     <string name="continue_r">Continue</string>
     <string name="enter">Enter</string>
     <string name="display_txt">This is your life:</string>
-    <string name="career_txt">Your career was %1$s</string>
+    <string name="career_txt">Your career is %1$s</string>
     <string name="spouse_txt">You married %1$s</string>
     <string name="location_txt">Your location was %1$s</string>
     <string name="house_txt">You live in a %1$s</string>
     <string name="kids_txt">You have %1$s kids</string>
+
 </resources>

@@ -11,10 +11,10 @@
         android:id="@+id/display_msg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="20dp"
         android:text="@string/display_txt"
         android:gravity="center"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline2"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,56 +23,56 @@
         android:id="@+id/career"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/career_txt"
+        android:text="@{@string/career_txt(inputOne)}"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
         app:layout_constraintTop_toBottomOf="@id/display_msg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="100dp"/>
+        android:layout_marginTop="200dp"/>
 
     <TextView
         android:id="@+id/spouse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/spouse_txt"
+        android:text="@{@string/spouse_txt(inputTwo)}"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
         app:layout_constraintTop_toBottomOf="@id/career"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="100dp"/>
+        android:layout_marginTop="30dp"/>
 
     <TextView
         android:id="@+id/location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/location_txt"
+        android:text="@{@string/location_txt(inputThree)}"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
         app:layout_constraintTop_toBottomOf="@id/spouse"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="100dp"/>
+        android:layout_marginTop="30dp"/>
 
     <TextView
         android:id="@+id/house"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/house_txt"
+        android:text="@{@string/house_txt(inputFour)}"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
         app:layout_constraintTop_toBottomOf="@id/location"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="100dp"/>
+        android:layout_marginTop="30dp"/>
 
     <TextView
         android:id="@+id/kids"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/kids_txt"
+        android:text="@{@string/kids_txt(inputFive)}"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
         app:layout_constraintTop_toBottomOf="@id/house"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="100dp"/>
+        android:layout_marginTop="30dp"/>
 
 
 

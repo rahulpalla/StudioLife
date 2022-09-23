@@ -45,9 +45,9 @@ class QuestionCardAdapter (
         return qList.size
     }
 
-    var temp1: String = "null"
-    var temp2: String = "null"
-    var temp3: String = "null"
+    var inputOne: String = "null"
+    var inputTwo: String = "null"
+    var inputThree: String = "null"
 
     override fun onBindViewHolder(holder: QuestionCardViewHolder, position: Int) {
         // Get the data at the current position
@@ -56,7 +56,7 @@ class QuestionCardAdapter (
 
         holder.input1Text?.addTextChangedListener(object: TextWatcher{
             override fun afterTextChanged(s: Editable?) {
-                temp1 = s.toString()
+                inputOne = s.toString()
             }
 
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
@@ -65,7 +65,7 @@ class QuestionCardAdapter (
 
         holder.input2Text?.addTextChangedListener(object: TextWatcher{
             override fun afterTextChanged(s: Editable?) {
-                temp2 = s.toString()
+                inputTwo = s.toString()
             }
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
@@ -73,16 +73,16 @@ class QuestionCardAdapter (
 
         holder.input3Text?.addTextChangedListener(object: TextWatcher{
             override fun afterTextChanged(s: Editable?) {
-                temp3 = s.toString()
+                inputThree = s.toString()
             }
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
         })
 
         holder.button?.setOnClickListener {
-            optionList.add(temp1)
-            optionList.add(temp2)
-            optionList.add(temp3)
+            optionList.add(inputOne)
+            optionList.add(inputTwo)
+            optionList.add(inputThree)
             holder.button.visibility = View.INVISIBLE;
         }
     }

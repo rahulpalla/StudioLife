@@ -18,13 +18,16 @@ package com.example.studiolife
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.TextView
+import androidx.core.content.ContextCompat.startActivity
 import com.example.studiolife.adapter.QuestionCardAdapter
 import com.example.studiolife.databinding.EndPageBinding
+import androidx.databinding.BindingAdapter as BindingAdapter
 
 class EndActivity: AppCompatActivity() {
 
     private lateinit var binding: EndPageBinding
-//    private lateinit var listIntent: Intent
     private val resultList: ArrayList<String> = arrayListOf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,11 +41,11 @@ class EndActivity: AppCompatActivity() {
         life.select()
 
         if (resources != null && resultList.size == 5) {
-            var inputOne: String = resources.getString(R.string.career_txt, resultList[0])
-            var inputTwo: String = resources.getString(R.string.spouse_txt, resultList[1])
-            var inputThree: String =resources.getString(R.string.location_txt, resultList[2])
-            var inputFour: String =resources.getString(R.string.house_txt, resultList[3])
-            var inputFive: String =resources.getString(R.string.kids_txt, resultList[4])
+            binding.career.text = resources.getString(R.string.career_txt, resultList[0])
+            binding.spouse.text = resources.getString(R.string.spouse_txt, resultList[1])
+            binding.location.text =resources.getString(R.string.location_txt, resultList[2])
+            binding.house.text =resources.getString(R.string.house_txt, resultList[3])
+            binding.kids.text =resources.getString(R.string.kids_txt, resultList[4])
         }
     }
 }
