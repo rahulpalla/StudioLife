@@ -13,7 +13,7 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-package com.example.studiolife
+package com.example.studiolife.data
 
 import com.example.studiolife.model.Question
 
@@ -25,55 +25,45 @@ object DataSource {
     val questions: List<Question> = listOf(
         Question(
 //            R.drawable.zoya,
-            "What career do you want?",
+            "Zoya",
             null,
             null,
             null
         ),
-
-        Question(
-//            R.drawable.cupcake,
-            "Who do you want to marry?",
-            null,
-            null,
-            null
-        ),
-
         Question(
 //            R.drawable.momo,
-            "Where do you want to live?",
+            "Mo",
             null,
             null,
             null
         ),
         Question(
-//            R.drawable.tiramisu,
-            "What kind of house do you want?",
-            null,
-            null,
-            null
-        ),
-
-        Question(
-//            R.drawable.tiramisu,
-            "What mode of transportation do you want?",
+//            R.drawable.cupcake,
+            "Cupcake",
             null,
             null,
             null
         ),
         Question(
 //            R.drawable.jasper,
-            "How many kids do you want?",
+            "Jasper",
             null,
             null,
             null
         ),
         Question(
 //            R.drawable.tabitha,
-            "What pet do you want",
+            "Tabitha",
             null,
             null,
             null
         ),
+        Question(
+//            R.drawable.tiramisu,
+            "Tiramisu",
+            null,
+            null,
+            null
+        )
     )
 }
