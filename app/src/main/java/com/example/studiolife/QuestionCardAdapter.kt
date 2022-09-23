@@ -18,12 +18,12 @@ import kotlinx.coroutines.NonDisposableHandle.parent
 import kotlin.random.Random
 
 class QuestionCardAdapter (
-    private val context: Context?
+    private val context: Context?,
+    private val myData: ArrayList<String>
 ): RecyclerView.Adapter<QuestionCardAdapter.QuestionCardViewHolder>() {
 
     //Initialize the data using the List found in data/DataSource
     private val qList = questions
-    private var myData: ArrayList<String> = ArrayList()
 
     /**
      * Initialize view elements
@@ -35,7 +35,6 @@ class QuestionCardAdapter (
         val input2Text: TextView? = view!!.findViewById(R.id.input2_edit_text)
         val input3Text: TextView? = view!!.findViewById(R.id.input3_edit_text)
         val enterButton: Button = view!!.findViewById(R.id.enter_btn)
-        // var marry: TextView = view!!.findViewById(R.id.marry_text)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): QuestionCardViewHolder {
@@ -54,10 +53,10 @@ class QuestionCardAdapter (
         var inputOne: String = ""
         var inputTwo: String = ""
         var inputThree: String = ""
-        var firstVal: String
-        var secondVal: String
-        var thirdVal: String
-        var fourthVal: String
+//        var firstVal: String
+//        var secondVal: String
+//        var thirdVal: String
+//        var fourthVal: String
         holder.questionText?.text = data.question
         holder.input1Text?.addTextChangedListener(object: TextWatcher{
             override fun afterTextChanged(s: Editable?) {
@@ -87,12 +86,12 @@ class QuestionCardAdapter (
             myData.add(inputTwo)
             myData.add(inputThree)
             holder.enterButton.visibility = View.INVISIBLE
-            if(myData.size == 12){
-                firstVal = myData[Random.nextInt(0, 2)]
-                secondVal = myData[Random.nextInt(3, 5)]
-                thirdVal = myData[Random.nextInt(6, 8)]
-                fourthVal = myData[Random.nextInt(9, 11)]
-            }
+//            if(myData.size == 12){
+//                firstVal = myData[Random.nextInt(0, 2)]
+//                secondVal = myData[Random.nextInt(3, 5)]
+//                thirdVal = myData[Random.nextInt(6, 8)]
+//                fourthVal = myData[Random.nextInt(9, 11)]
+//            }
         }
     }
 }

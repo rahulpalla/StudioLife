@@ -23,7 +23,7 @@
         android:id="@+id/marry_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/marry"
+        android:text="@{@string/marry(inputOne)}"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
         app:layout_constraintTop_toBottomOf="@id/welcome_message"
         app:layout_constraintEnd_toEndOf="parent"
