@@ -19,6 +19,7 @@ import com.google.android.material.textfield.TextInputEditText
 
 class QuestionCardAdapter (
     private val context: Context?,
+    private val optionList: MutableList<String>
 ): RecyclerView.Adapter<QuestionCardAdapter.QuestionCardViewHolder>() {
 
     //Initialize the data using the List found in data/DataSource
@@ -47,40 +48,45 @@ class QuestionCardAdapter (
         return qList.size
     }
 
+    var temp1: String = "null"
+    var temp2: String = "null"
+    var temp3: String = "null"
+
     override fun onBindViewHolder(holder: QuestionCardViewHolder, position: Int) {
         // Get the data at the current position
         val data = qList[position]
         holder.questionText?.text = data.question
 
-        holder.button?.setOnClickListener {
-            data.input1 = holder.input1Text.toString()
-            data.input2 = holder.input2Text.toString()
-            data.input3 = holder.input3Text.toString()
-        }
+        holder.input1Text?.addTextChangedListener(object: TextWatcher{
+            override fun afterTextChanged(s: Editable?) {
+                temp1 = s.toString()
+            }
 
-//        holder.input1Text?.addTextChangedListener(object: TextWatcher{
-//            override fun afterTextChanged(s: Editable?) {
-//                data.input1 = s.toString()
-//            }
-//
-//            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
-//            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
-//        })
-//
-//        holder.input2Text?.addTextChangedListener(object: TextWatcher{
-//            override fun afterTextChanged(s: Editable?) {
-//                data.input2 = s.toString()
-//            }
-//            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
-//            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
-//        })
-//
-//        holder.input3Text?.addTextChangedListener(object: TextWatcher{
-//            override fun afterTextChanged(s: Editable?) {
-//                data.input3 = s.toString()
-//            }
-//            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
-//            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
-//        })
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
+        })
+
+        holder.input2Text?.addTextChangedListener(object: TextWatcher{
+            override fun afterTextChanged(s: Editable?) {
+                temp2 = s.toString()
+            }
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
+        })
+
+        holder.input3Text?.addTextChangedListener(object: TextWatcher{
+            override fun afterTextChanged(s: Editable?) {
+                temp3 = s.toString()
+            }
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
+        })
+
+        holder.button?.setOnClickListener {
+            optionList.add(temp1)
+            optionList.add(temp2)
+            optionList.add(temp3)
+            holder.button?.visibility = View.GONE;
+        }
     }
 }

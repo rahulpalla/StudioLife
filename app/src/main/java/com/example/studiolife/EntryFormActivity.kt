@@ -30,8 +30,11 @@ class EntryFormActivity : AppCompatActivity() {
         binding = EntryFormFullBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val optionList: MutableList<String> = mutableListOf()
+
         binding.verticalRecyclerView.adapter = QuestionCardAdapter(
             applicationContext,
+            optionList,
         )
 
         // Specify fixed size to improve performance
