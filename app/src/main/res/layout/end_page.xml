@@ -28,7 +28,7 @@
         app:layout_constraintTop_toBottomOf="@id/display_msg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="200dp"/>
+        android:layout_marginTop="100dp"/>
 
     <TextView
         android:id="@+id/spouse"
@@ -74,6 +74,38 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="30dp"/>
 
+    <TextView
+        android:id="@+id/end_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Did you have fun?"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+        app:layout_constraintTop_toBottomOf="@id/kids"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"/>
 
+    <RadioGroup
+        android:id="@+id/tip_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/option_yes"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@id/end_question"
+        app:layout_constraintTop_toBottomOf="@id/end_question">
+
+        <RadioButton
+            android:id="@+id/option_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/option_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No" />
+
+    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
