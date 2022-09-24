@@ -16,6 +16,8 @@
 package com.example.studiolife.data
 
 import android.widget.Button
+import com.example.studiolife.R
+
 import com.example.studiolife.model.Question
 
 /**
@@ -25,7 +27,7 @@ object DataSource {
 
     var questions: MutableList<Question> = mutableListOf(
         Question(
-//            R.drawable.zoya,
+            R.drawable.career_image,
             "What career do you want?",
             null,
             null,
@@ -33,7 +35,7 @@ object DataSource {
         ),
 
         Question(
-//            R.drawable.cupcake,
+            R.drawable.spouse_image,
             "Who do you want to marry?",
             null,
             null,
@@ -41,21 +43,21 @@ object DataSource {
         ),
 
         Question(
-//            R.drawable.momo,
+            R.drawable.location_image,
             "Where do you want to live?",
             null,
             null,
             null
         ),
         Question(
-//            R.drawable.tiramisu,
+            R.drawable.house_image,
             "What kind of house do you want?",
             null,
             null,
             null
         ),
         Question(
-//            R.drawable.jasper,
+            R.drawable.kid_clipart,
             "How many kids do you want?",
             null,
             null,
