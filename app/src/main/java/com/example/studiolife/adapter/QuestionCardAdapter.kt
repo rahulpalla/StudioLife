@@ -27,7 +27,7 @@ class QuestionCardAdapter (
      */
     class QuestionCardViewHolder(view: View?): RecyclerView.ViewHolder(view!!) {
         // Declare and initialize all of the list item UI components
-//        val qImage: ImageView? = view!!.findViewById(R.id.dog_image)
+        val qImage: ImageView? = view!!.findViewById(R.id.question_image)
         val questionText: TextView? = view!!.findViewById(R.id.question);
         var input1Text: EditText? = view!!.findViewById(R.id.input1_text)
         var input2Text: EditText? = view!!.findViewById(R.id.input2_text)
@@ -53,6 +53,8 @@ class QuestionCardAdapter (
         // Get the data at the current position
         val data = qList[position]
         holder.questionText?.text = data.question
+
+        holder.qImage?.setImageResource(data.imageResourceId)
 
         holder.input1Text?.addTextChangedListener(object: TextWatcher{
             override fun afterTextChanged(s: Editable?) {

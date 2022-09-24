@@ -15,7 +15,7 @@
         <ImageView
             android:id="@+id/question_image"
             android:layout_width="match_parent"
-            android:layout_height="154dp"
+            android:layout_height="194dp"
             android:scaleType="centerCrop"
             app:layout_constraintTop_toTopOf="parent"/>
 
