@@ -15,10 +15,11 @@
 */
 package com.example.studiolife.data
 
-import android.widget.Button
 import com.example.studiolife.R
 
 import com.example.studiolife.model.Question
+
+import com.example.studiolife.MainActivity
 
 /**
  * An object to generate a list of questions

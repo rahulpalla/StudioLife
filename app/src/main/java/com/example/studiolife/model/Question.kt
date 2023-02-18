@@ -1,6 +1,5 @@
 package com.example.studiolife.model
 
-import android.widget.Button
 import androidx.annotation.DrawableRes
 
 /**

@@ -8,6 +8,25 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/final_img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/error"/>
+
+    <TextView
         android:id="@+id/display_msg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,7 +36,7 @@
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/final_img" />
 
     <TextView
         android:id="@+id/career"
@@ -28,7 +47,7 @@
         app:layout_constraintTop_toBottomOf="@id/display_msg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="100dp"/>
+        android:layout_marginTop="50dp"/>
 
     <TextView
         android:id="@+id/spouse"
@@ -39,7 +58,7 @@
         app:layout_constraintTop_toBottomOf="@id/career"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="20dp"/>
 
     <TextView
         android:id="@+id/location"
@@ -50,7 +69,7 @@
         app:layout_constraintTop_toBottomOf="@id/spouse"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="20dp"/>
 
     <TextView
         android:id="@+id/house"
@@ -61,7 +80,7 @@
         app:layout_constraintTop_toBottomOf="@id/location"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="20dp"/>
 
     <TextView
         android:id="@+id/kids"
@@ -72,7 +91,7 @@
         app:layout_constraintTop_toBottomOf="@id/house"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="20dp"/>
 
     <TextView
         android:id="@+id/end_question"

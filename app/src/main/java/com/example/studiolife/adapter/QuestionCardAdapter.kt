@@ -56,6 +56,7 @@ class QuestionCardAdapter (
 
         holder.qImage?.setImageResource(data.imageResourceId)
 
+        //tracking the user input and updating the strings from the edit text boxes
         holder.input1Text?.addTextChangedListener(object: TextWatcher{
             override fun afterTextChanged(s: Editable?) {
                 inputOne = s.toString()
@@ -81,6 +82,7 @@ class QuestionCardAdapter (
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
         })
 
+        //user signals they are done with the question input, store the values in the option list
         holder.button?.setOnClickListener {
             optionList.add(inputOne)
             optionList.add(inputTwo)

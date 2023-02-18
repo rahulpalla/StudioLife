@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "822556258364",
+    "project_id": "studio-life",
+    "storage_bucket": "studio-life.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:822556258364:android:79322c142e88749a1a5339",
+        "android_client_info": {
+          "package_name": "com.example.studiolife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "822556258364-jgv2rd5mimfftfm83s1g1v322e6j7i60.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXl12kKrzs7x5AKQ-bqZBV4KJ7T-E40pA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "822556258364-jgv2rd5mimfftfm83s1g1v322e6j7i60.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
