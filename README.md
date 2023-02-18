@@ -9,6 +9,8 @@ Go to this link to learn more about installing Android Studio: https://developer
 With Android Studio you can create AVDs (Android Virtual Devices) so you can test your app on an emulator in the same IDE window.
 Before running an app, click on “Device Manager” in the side bar and create your AVD
 
+https://drive.google.com/file/d/1wmLSWeCXKlgpo-FVxww0ZHTMNOaYIHbn/view?usp=share_link
+
 Then you can select your app and the AVD you made and run your app
 
 # Official Android Developer guides
